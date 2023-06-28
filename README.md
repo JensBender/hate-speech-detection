@@ -176,11 +176,11 @@ Here are some example comments from the test data along with their true label an
 
 |          | True Label | SimpleRNN | LSTM    | Fine-Tuned BERT |
 |----------|----------|----------|----------|----------|
-|  Women deserve to be abused, I guess. | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
-| Christians are all demonic. | <span style="color:red;">Hate Speech</span> | <span style="color:green;">No Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
-| Muslims want war! So take it to them first | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:green;">No Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
-| Fat lesbians | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
-| What imaginary gender are you? | <span style="color:red;">Hate Speech</span> | <span style="color:green;">No Hate Speech</span> | <span style="color:green;">No Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
+|  Women deserve to be abused, I guess. | Hate | Hate | Hate | Hate |
+| Christians are all demonic. | Hate | No Hate | Hate | Hate |
+| Muslims want war! So take it to them first | Hate | Hate | No Hate | Hate |
+| Fat lesbians | Hate | Hate | Hate | Hate |
+| What imaginary gender are you? | Hate | No Hate | No Hate | Hate |
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
