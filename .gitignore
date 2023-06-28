@@ -1,0 +1,9 @@
+/data
+/literature
+/saved_models
+/plots/model1_learning_curve_accuracy.png
+/plots/model1_learning_curve_loss.png
+/plots/model2_learning_curve_accuracy.png
+/plots/model2_learning_curve_loss.png
+/plots/model3_learning_curve_accuracy.png
+/plots/model3_learning_curve_loss.png
