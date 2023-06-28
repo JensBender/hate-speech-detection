@@ -176,7 +176,7 @@ Here are some example comments from the test data along with their true label an
 
 |          | True Label | SimpleRNN | LSTM    | Fine-Tuned BERT |
 |----------|----------|----------|----------|----------|
-|  Women deserve to be abused, I guess. | <font color="red">Hate Speech</font> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
+|  Women deserve to be abused, I guess. | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
 | Christians are all demonic. | <span style="color:red;">Hate Speech</span> | <span style="color:green;">No Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
 | Muslims want war! So take it to them first | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:green;">No Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
 | Fat lesbians | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> | <span style="color:red;">Hate Speech</span> |
