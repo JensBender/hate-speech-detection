@@ -209,12 +209,12 @@ This is a list of the Python packages you need.
 ## Appendix
 ### SimpleRNN: Preprocessing, Model Architecture and Hyperparameters
 
-<u>Preprocessing</u>   
+**Preprocessing**   
 Tokenizer vocabulary size: 5000  
 Padded sequence length: 15  
 Embedding dimension: 50
 
-<u>Model Architecture</u>
+**Model Architecture**
 | Layer (type) | Output Shape    | Param # | Activation |
 | ------------ | --------------- | ------- | ---------- |
 | Embedding    | (None, 15, 50)  | 250050  |            |
@@ -227,7 +227,7 @@ Total params: 314,179
 Trainable params: 314,179  
 Non-trainable params: 0
 
-<u>Hyperparameters</u>  
+**Hyperparameters** 
 Optimizer: Adam  
 Learning rate: 0.001  
 Loss: Binary Crossentropy  
@@ -241,12 +241,12 @@ Early stopping metric: Accuracy
 ### LSTM: Preprocessing, Model Architecture and Hyperparameters
 
 
-<u>Preprocessing</u>   
+**Preprocessing**   
 Tokenizer vocabulary size: 5000  
 Padded sequence length: 150  
 Embedding dimension: 50
 
-<u>Model Architecture</u>
+**Model Architecture**
 | Layer (type) | Output Shape     | Param # | Activation |
 | ------------ | ---------------- | ------- | ---------- |
 | Embedding    | (None, 150, 50)  | 250050  |            |
@@ -259,7 +259,7 @@ Total params: 481,603
 Trainable params: 481,603  
 Non-trainable params: 0 
 
-<u>Hyperparameters</u>  
+**Hyperparameters**  
 Optimizer: Adam  
 Learning rate: 0.001  
 Loss: Binary Crossentropy  
@@ -272,10 +272,10 @@ Early stopping metric: Accuracy
 
 ### Fine-Tuned BERT: Preprocessing, Model Architecture and Hyperparameters
 
-<u>Preprocessing</u>   
+**Preprocessing**   
 Text preprocessing for BERT models: https://tfhub.dev/tensorflow/bert_en_uncased_preprocess/3
 
-<u>Model Architecture</u>
+**Model Architecture**
 | Layer (type)  | Output Shape     | Param #  | Activation |
 | ------------- | ---------------- | -------- | ---------- |
 | Text Input    | [(None,)]        | 0        |            |
@@ -289,7 +289,7 @@ Total params: 28,829,442
 Trainable params: 28,829,441  
 Non-trainable params: 1 
 
-<u>Hyperparameters</u>  
+**Hyperparameters** 
 Optimizer: Adam  
 Learning rate: 0.0001  
 Loss: Binary Crossentropy  
