@@ -98,14 +98,14 @@ print("="*20)
 comments_train, comments_test, labels_train, labels_test = train_test_split(
     comments, labels, test_size=0.3, random_state=42)
 
-# Initialize instance for early stopping
+# Initialize instance for early stopping (used in all models)
 early_stopping = keras.callbacks.EarlyStopping(
     monitor="val_accuracy",
     mode="max",
     patience=20,
     restore_best_weights=True)
 
-# Specify dropout rate 
+# Specify dropout rate (used in all models) 
 dropout_rate = 0.5
 
 
