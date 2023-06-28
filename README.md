@@ -227,7 +227,7 @@ Total params: 314,179
 Trainable params: 314,179  
 Non-trainable params: 0
 
-**Hyperparameters** 
+**Hyperparameters**  
 Optimizer: Adam  
 Learning rate: 0.001  
 Loss: Binary Crossentropy  
@@ -289,7 +289,7 @@ Total params: 28,829,442
 Trainable params: 28,829,441  
 Non-trainable params: 1 
 
-**Hyperparameters** 
+**Hyperparameters**  
 Optimizer: Adam  
 Learning rate: 0.0001  
 Loss: Binary Crossentropy  
