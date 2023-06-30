@@ -15,6 +15,10 @@ from tensorflow import keras
 import tensorflow_hub as hub
 import tensorflow_text  # prerequisite for using the BERT preprocessing layer of TensorFlow Hub
 
+# Download data
+# Create a "data" folder and download the "Ethos_Dataset_Binary.csv" file from: 
+# https://github.com/intelligence-csd-auth-gr/Ethos-Hate-Speech-Dataset/tree/master/ethos/ethos_data
+
 # Load data
 df = pd.read_csv("./data/Ethos_Dataset_Binary.csv", sep=";")
 
