@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hate Speech Detector</title>
+</head>
+<body>
+    <h1>Hate Speech Detector</h1>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <input type="text" name="input_text" placeholder="Social Media Comment" required="required">
+        <button type="submit">Run</button>
+    </form>
+
+    {% if prediction %}
+        <p><b>Text:</b> {{ text }}</p>
+        <p><b>Result:</b> {{ prediction }} with a probability of {{ prediction_prob }}%.</p>
+    {% endif %}
+</body>
+</html>
