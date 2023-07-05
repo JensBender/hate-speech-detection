@@ -43,6 +43,9 @@
       <li><a href="#illustrative-examples">Illustrative Examples</a></li>
     </ul>
   <li>
+    <a href="#model-deployment">Model Deployment</a>
+  </li>
+  <li>
     <a href="#getting-started">Getting Started</a>
     <ul>
       <li><a href="#prerequisites">Prerequisites</a></li>
@@ -81,8 +84,11 @@
 * [![NumPy][NumPy-badge]][NumPy-url]
 * [![Pandas][Pandas-badge]][Pandas-url]
 * [![Matplotlib][Matplotlib-badge]][Matplotlib-url]
+* [![Flask][Flask-badge]][Flask-url]
 * [![Python][Python-badge]][Python-url]
 * [![Spyder][Spyder-badge]][Spyder-url]
+* ![HTML5][HTML5-badge]
+* ![CSS3][CSS3-badge]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,6 +190,14 @@ Here are some example comments from the test data along with their true label an
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MODEL DEPLOYMENT -->
+## Model Deployment
+I deployed the fine-tuned BERT model as a web application using the Flask framework, HTML, and CSS.
+
+<img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;">
+<img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
 
 
 <!-- GETTING STARTED -->
@@ -311,8 +325,11 @@ Early stopping metric: Accuracy
 [Pandas-url]: https://pandas.pydata.org/
 [Matplotlib-badge]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
 [Matplotlib-url]: https://matplotlib.org/
+[Flask-badge]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
+[Flask-url]: https://flask.palletsprojects.com/en/2.3.x/
 [Python-badge]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/
 [Spyder-badge]: https://img.shields.io/badge/Spyder-838485?style=for-the-badge&logo=spyder%20ide&logoColor=maroon
 [Spyder-url]: https://www.spyder-ide.org/
-
+[HTML5-badge]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[CSS3-badge]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
