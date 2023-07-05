@@ -37,7 +37,7 @@ def predict():
     else:
         prediction = "No Hate Speech"
         # Invert the prediction probability
-        prediction_prob = 1 - prediction_prob
+        prediction_prob = 100 - prediction_prob
     # Render the prediction, prediction probability and input text in the index.html template
     return render_template("index.html", prediction=prediction, prediction_prob=prediction_prob, text=input_text)
 
