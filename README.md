@@ -196,8 +196,7 @@ Here are some example comments from the test data along with their true label an
 ## Model Deployment
 I deployed the fine-tuned BERT model as a web application using the Flask framework, HTML, and CSS.
 
-<img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;">
-<img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
+<img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;"> <img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
 
 
 <!-- GETTING STARTED -->
@@ -214,6 +213,7 @@ This is a list of the Python packages you need.
   <li>NumPy</li>
   <li>Pandas</li>
   <li>Matplotlib</li>
+  <li>Flask</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
