@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/JensBender/hate-speech-detection">
-    <img src="logo/logo.png" width=80%>
+    <img src="images/logo.png" width=80%>
   </a>
   <p>
     <br />
