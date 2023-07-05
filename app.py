@@ -39,7 +39,7 @@ def predict():
         # Invert the prediction probability
         prediction_prob = 100 - prediction_prob
     # Render the prediction, prediction probability and input text in the index.html template
-    return render_template("index.html", prediction=prediction, prediction_prob=prediction_prob, text=input_text)
+    return render_template("index.html", prediction=prediction, prediction_prob=prediction_prob)
 
 if __name__ == "__main__":
     app.run(debug=True)
