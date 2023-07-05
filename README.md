@@ -188,15 +188,16 @@ Here are some example comments from the test data along with their true label an
 | Fat lesbians | Hate | Hate | Hate | Hate |
 | What imaginary gender are you? | Hate | No Hate | No Hate | Hate |
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MODEL DEPLOYMENT -->
 ## Model Deployment
-I deployed the fine-tuned BERT model as a web application using the Flask framework, HTML, and CSS.
+I created a web application with a user-friendly interface to deploy the fine-tuned BERT model utilizing the Flask framework, HTML, and CSS.
 
 <img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;"> <img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
