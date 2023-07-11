@@ -16,12 +16,14 @@ app = Flask(__name__)
 # Load the TensorFlow model
 model = tf.keras.models.load_model("saved_models/model3")
 
-# Define the route for the home page
+
+# Home route 
 @app.route("/")
 def home():
     return render_template("index.html")
 
-# Define the route for model prediction
+
+# Route for model prediction
 @app.route("/predict", methods=["POST"])
 def predict():
     # Retrieve the input text from the HTML form
@@ -32,15 +34,17 @@ def predict():
     prediction_prob = model.predict(input_data)[0][0]
     # Convert prediction probability to percent
     prediction_prob = np.round(prediction_prob * 100, 1)
-    # Convert prediction probability to prediction text
+    # Convert prediction probability to prediction in text form
     if prediction_prob >= 50:
         prediction = "Hate Speech"
     else:
         prediction = "No Hate Speech"
         # Invert the prediction probability
         prediction_prob = 100 - prediction_prob
-    # Render the prediction, prediction probability and input text in the index.html template
+    # Render the prediction and prediction probability in the index.html template
     return render_template("index.html", prediction=prediction, prediction_prob=prediction_prob)
 
+
+# Start the Flask web application
 if __name__ == "__main__":
     app.run(debug=True)
