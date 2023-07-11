@@ -6,6 +6,9 @@ Created on Mon Jul  3 08:39:20 2023
 """
 
 from flask import Flask, render_template, request
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
 import tensorflow as tf
 import tensorflow_text  # prerequisite for using the BERT preprocessing layer
 import numpy as np
@@ -19,6 +22,12 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 # Load the TensorFlow model
 model = tf.keras.models.load_model("saved_models/model3")
+
+
+# Create hate speech detection form class (that inherits from the Flask WTForm class)
+class HateSpeechForm(FlaskForm):
+    comment = StringField("Social Media Comment", validators=[DataRequired()])
+    submit = SubmitField("Submit Post")
 
 
 # Home route 
