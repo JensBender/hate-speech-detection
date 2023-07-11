@@ -15,6 +15,9 @@ import numpy as np
 from dotenv import load_dotenv
 import os
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Create the Flask web application
 app = Flask(__name__)
 # Set a secret key (stored in .env) as a security measure (e.g. protecting against CSRF attacks) 
