@@ -63,28 +63,6 @@ def home():
     return render_template("index.html", form=form)
 
 
-# Route for model prediction
-@app.route("/predict", methods=["POST"])
-def predict():
-    # Retrieve the input text from the HTML form
-    input_text = request.form["input_text"]
-    # Convert input text to a list
-    input_data = [input_text]
-    # Make prediction using the TensorFlow model
-    prediction_prob = model.predict(input_data)[0][0]
-    # Convert prediction probability to percent
-    prediction_prob = np.round(prediction_prob * 100, 1)
-    # Convert prediction probability to prediction in text form
-    if prediction_prob >= 50:
-        prediction = "Hate Speech"
-    else:
-        prediction = "No Hate Speech"
-        # Invert the prediction probability
-        prediction_prob = 100 - prediction_prob
-    # Render the prediction and prediction probability in the index.html template
-    return render_template("index.html", prediction=prediction, prediction_prob=prediction_prob)
-
-
 # Start the Flask web application
 if __name__ == "__main__":
     app.run(debug=True)
