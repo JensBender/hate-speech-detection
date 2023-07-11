@@ -5,7 +5,7 @@ Created on Mon Jul  3 08:39:20 2023
 @author: Jens Bender
 """
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
