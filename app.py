@@ -30,13 +30,37 @@ model = tf.keras.models.load_model("saved_models/model3")
 # Create hate speech detection form class (that inherits from the Flask WTForm class)
 class HateSpeechForm(FlaskForm):
     comment = StringField("Social Media Comment", validators=[DataRequired()])
-    submit = SubmitField("Submit Post")
+    submit = SubmitField("Run")
 
 
 # Home route 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def home():
-    return render_template("index.html")
+    # Instantiate a hate speech form class object
+    form = HateSpeechForm()
+    # If the user submitted valid information in the hate speech form
+    if form.validate_on_submit():
+        # Get the input text from the form
+        input_text = form.comment.data
+        # Convert input text to a list
+        input_data = [input_text]
+        # Make prediction using the TensorFlow model
+        prediction_prob = model.predict(input_data)[0][0]
+        # Convert prediction probability to percent
+        prediction_prob = np.round(prediction_prob * 100, 1)
+        # Convert prediction probability to prediction in text form
+        if prediction_prob >= 50:
+            prediction = "Hate Speech"
+        else:
+            prediction = "No Hate Speech"
+            # Invert the prediction probability
+            prediction_prob = 100 - prediction_prob
+        # Render the prediction and prediction probability in the index.html template
+        return render_template("index.html", 
+                               form=form, 
+                               prediction=prediction, 
+                               prediction_prob=prediction_prob)
+    return render_template("index.html", form=form)
 
 
 # Route for model prediction
