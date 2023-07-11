@@ -9,9 +9,13 @@ from flask import Flask, render_template, request
 import tensorflow as tf
 import tensorflow_text  # prerequisite for using the BERT preprocessing layer
 import numpy as np
+from dotenv import load_dotenv
+import os
 
 # Create the Flask web application
 app = Flask(__name__)
+# Set a secret key (stored in .env) as a security measure (e.g. protecting against CSRF attacks) 
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 # Load the TensorFlow model
 model = tf.keras.models.load_model("saved_models/model3")
