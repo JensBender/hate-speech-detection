@@ -10,6 +10,7 @@ import tensorflow as tf
 import tensorflow_text  # prerequisite for using the BERT preprocessing layer
 import numpy as np
 
+# Create the Flask web application
 app = Flask(__name__)
 
 # Load the TensorFlow model
