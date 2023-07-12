@@ -1,4 +1,5 @@
 .env
+/venv_deployment
 /data
 /literature
 /saved_models
