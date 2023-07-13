@@ -2,7 +2,6 @@
 /venv_deployment
 /data
 /literature
-/saved_models
 /images/jon-tyson-IYtVtgXw72M-unsplash.jpg
 /plots/model1_learning_curve_accuracy.png
 /plots/model1_learning_curve_loss.png
