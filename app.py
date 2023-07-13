@@ -24,7 +24,7 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 # Load the TensorFlow model
-model = tf.keras.models.load_model("saved_models/model3")
+model = tf.keras.models.load_model("saved_models/model2")
 
 
 # Create hate speech detection form class (that inherits from the Flask WTForm class)
