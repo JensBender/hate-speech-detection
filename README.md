@@ -200,12 +200,12 @@ Here are some example comments from the test data along with their true label an
 I deployed the fine-tuned BERT model through both a web application and an API.
 
 ### Web Application
-I created a web application with a user-friendly interface utilizing the Flask framework, HTML, and CSS.
+Utilizing the Flask framework, HTML, and CSS, I created a web application with a user-friendly interface for users to input text and receive predictions on whether it contains hate speech.
 
 <img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;"> <img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
 
 ### API
-I developed an API endpoint leveraging the Flask framework and utilized <a href="https://www.postman.com/">Postman</a> for testing and documenting the API.
+I developed an API endpoint to enable integration with other applications or services leveraging the Flask framework and utilized <a href="https://www.postman.com/">Postman</a> for testing and documenting the API.
 
 API documentation: [See here](https://documenter.getpostman.com/view/28394113/2s946eBERv)
 
