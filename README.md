@@ -45,6 +45,10 @@
   <li>
     <a href="#model-deployment">Model Deployment</a>
   </li>
+    <ul>
+      <li><a href="#web-application">Web Application</a></li>
+      <li><a href="#api">API</a></li>
+    </ul>
   <li>
     <a href="#getting-started">Getting Started</a>
     <ul>
@@ -193,9 +197,19 @@ Here are some example comments from the test data along with their true label an
 
 <!-- MODEL DEPLOYMENT -->
 ## Model Deployment
-I created a web application with a user-friendly interface to deploy the fine-tuned BERT model utilizing the Flask framework, HTML, and CSS.
+I deployed the fine-tuned BERT model through both a web application and an API.
+
+### Web Application
+I created a web application with a user-friendly interface utilizing the Flask framework, HTML, and CSS.
 
 <img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;"> <img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
+
+### API
+I developed an API endpoint leveraging the Flask framework and utilized <a href="https://www.postman.com/">Postman</a> for testing and documenting the API.
+
+API documentation: [See here](https://documenter.getpostman.com/view/28394113/2s946eBERv)
+
+![Model deployment API](/images/model_deployment_api.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
