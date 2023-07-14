@@ -1,5 +1,6 @@
 .env
 /venv_deployment
+/.idea
 /data
 /literature
 /images/jon-tyson-IYtVtgXw72M-unsplash.jpg
