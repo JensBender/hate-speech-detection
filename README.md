@@ -100,7 +100,7 @@
 <!-- Motivation -->
 ## Motivation
 + Problem: Hate speech is on the rise globally, especially on social media platforms (source: [United Nations](https://www.un.org/en/hate-speech/understanding-hate-speech/what-is-hate-speech)).
-+ Project goal: Utilize deep learning for automated hate speech detection in social media comments.
++ Project goal: Utilize deep learning for hate speech detection in social media comments.
 + Definition of hate speech: Insulting public speech directed at speciﬁc individuals or groups on the basis of characteristics such as race, religion, ethnic origin, national origin, sex, disability, sexual orientation, or gender identity ([Mollas, Chrysopoulou, Karlos, & Tsoumakas, 2022](https://link.springer.com/article/10.1007/s40747-021-00608-2)).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -205,7 +205,7 @@ Utilizing the Flask framework, HTML, and CSS, I created a web application with a
 <img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;"> <img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
 
 ### API
-I developed an API endpoint to enable integration with other applications or services leveraging the Flask framework and utilized <a href="https://www.postman.com/">Postman</a> for testing and documenting the API.
+I developed an API endpoint to enable integration with other applications or services by leveraging the Flask framework and utilized <a href="https://www.postman.com/">Postman</a> for testing and documenting the API.
 
 API documentation: [See here](https://documenter.getpostman.com/view/28394113/2s946eBERv)
 
