@@ -75,12 +75,9 @@
 
 ### Summary
 + Motivation: Develop a hate speech detector for social media comments. 
-+ Data: [ETHOS Hate Speech Detection Dataset](https://github.com/intelligence-csd-auth-gr/Ethos-Hate-Speech-Dataset).
-+ Models: Comparison of SimpleRNN, LSTM, and fine-tuned BERT model.
-+ Performance: Accuracy 
-  + SimpleRNN: 66.3%
-  + LSTM: 70.7%
-  + Fine-tuned BERT: 78.0%
++ Data: Utilized the [ETHOS Hate Speech Detection Dataset](https://github.com/intelligence-csd-auth-gr/Ethos-Hate-Speech-Dataset).
++ Models: The fine-tuned BERT model demonstrated superior performance (78.0% accuracy) compared to the SimpleRNN (66.3%) and LSTM (70.7%) models.
++ Deployment: The fine-tuned BERT model was rolled out through a web application and an API endpoint.
 
 ### Built With
 * [![TensorFlow][TensorFlow-badge]][TensorFlow-url]
