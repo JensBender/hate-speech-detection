@@ -214,9 +214,8 @@ API documentation: [See here](https://documenter.getpostman.com/view/28394113/2s
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites
-
-This is a list of the Python packages you need.
+### Prerequisites for Model Training
+This is a list of the Python packages you need.  
 <ul>
   <li>TensorFlow</li>
   <li>TensorFlow Hub</li>
@@ -225,8 +224,24 @@ This is a list of the Python packages you need.
   <li>NumPy</li>
   <li>Pandas</li>
   <li>Matplotlib</li>
-  <li>Flask</li>
 </ul>
+
+### Prerequisites for Model Deployment
+This is a list of the Python packages you need. 
+<ul>
+  <li>TensorFlow</li>
+  <li>TensorFlow Text</li>
+  <li>NumPy</li>
+  <li>Flask</li>
+  <li>Flask-WTF</li>
+  <li>WTForms</li>
+  <li>Python-dotenv</li>
+</ul>
+
+To enhance security, create a `.env` file and create a secret key for the Flask application. Store the secret key in the `.env` file and utilize the `python-dotenv` library to retrieve it. 
+  ```
+  SECRET_KEY = "Your_secret_key_here"
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
