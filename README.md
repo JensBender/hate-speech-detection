@@ -8,7 +8,7 @@
   </a>
   <p>
     <br />
-    Automated hate speech detection for social media comments.
+    Deep learning for hate speech detection in social media comments.
     <br />
   </p>
 </div> 
