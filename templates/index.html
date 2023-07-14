@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hate Speech Detector</title>
+  <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div><h1 class="title">Hate Speech Detector</h1></div>
+    <form class="form" action="{{ url_for('home') }}" method="POST">
+      {{ form.csrf_token }}
+      <div>{{ form.comment(class="text-input", placeholder="Enter social media comment...") }}</div>
+      <div>{{ form.submit(class="submit-button") }}</div>
+    </form>
+    {% if prediction %}
+      <div class="result">  
+        <p style="font-size: 1.5em;"><b>Result:</b> {{ prediction }}</p> 
+        <p><b>Probability:</b> {{ prediction_prob }}%</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>

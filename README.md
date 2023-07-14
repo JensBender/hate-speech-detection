@@ -4,11 +4,11 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/JensBender/hate-speech-detection">
-    <img src="logo/logo.png" width=80%>
+    <img src="images/logo.png" width=80%>
   </a>
   <p>
     <br />
-    Automated hate speech detection for social media comments.
+    Deep learning for hate speech detection in social media comments.
     <br />
   </p>
 </div> 
@@ -43,9 +43,17 @@
       <li><a href="#illustrative-examples">Illustrative Examples</a></li>
     </ul>
   <li>
+    <a href="#model-deployment">Model Deployment</a>
+  </li>
+    <ul>
+      <li><a href="#web-application">Web Application</a></li>
+      <li><a href="#api">API</a></li>
+    </ul>
+  <li>
     <a href="#getting-started">Getting Started</a>
     <ul>
-      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#prerequisites-for-model-training">Prerequisites for Model Training</a></li>
+      <li><a href="#prerequisites-for-model-deployment">Prerequisites for Model Deployment</a></li>
     </ul>
   </li>
   <li>
@@ -68,12 +76,9 @@
 
 ### Summary
 + Motivation: Develop a hate speech detector for social media comments. 
-+ Data: [ETHOS Hate Speech Detection Dataset](https://github.com/intelligence-csd-auth-gr/Ethos-Hate-Speech-Dataset).
-+ Models: Comparison of SimpleRNN, LSTM, and fine-tuned BERT model.
-+ Performance: Accuracy 
-  + SimpleRNN: 66.3%
-  + LSTM: 70.7%
-  + Fine-tuned BERT: 78.0%
++ Data: Utilized the [ETHOS Hate Speech Detection Dataset](https://github.com/intelligence-csd-auth-gr/Ethos-Hate-Speech-Dataset).
++ Models: The fine-tuned BERT model demonstrated superior performance (78.0% accuracy) compared to the SimpleRNN (66.3%) and LSTM (70.7%) models.
++ Deployment: The fine-tuned BERT model was prepared for production by integrating it into a web application and an API endpoint.
 
 ### Built With
 * [![TensorFlow][TensorFlow-badge]][TensorFlow-url]
@@ -81,8 +86,11 @@
 * [![NumPy][NumPy-badge]][NumPy-url]
 * [![Pandas][Pandas-badge]][Pandas-url]
 * [![Matplotlib][Matplotlib-badge]][Matplotlib-url]
+* [![Flask][Flask-badge]][Flask-url]
 * [![Python][Python-badge]][Python-url]
 * [![Spyder][Spyder-badge]][Spyder-url]
+* ![HTML5][HTML5-badge]
+* ![CSS3][CSS3-badge]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +98,7 @@
 <!-- Motivation -->
 ## Motivation
 + Problem: Hate speech is on the rise globally, especially on social media platforms (source: [United Nations](https://www.un.org/en/hate-speech/understanding-hate-speech/what-is-hate-speech)).
-+ Project goal: Utilize deep learning for automated hate speech detection in social media comments.
++ Project goal: Utilize deep learning for hate speech detection in social media comments.
 + Definition of hate speech: Insulting public speech directed at speciﬁc individuals or groups on the basis of characteristics such as race, religion, ethnic origin, national origin, sex, disability, sexual orientation, or gender identity ([Mollas, Chrysopoulou, Karlos, & Tsoumakas, 2022](https://link.springer.com/article/10.1007/s40747-021-00608-2)).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -182,6 +190,24 @@ Here are some example comments from the test data along with their true label an
 | Fat lesbians | Hate | Hate | Hate | Hate |
 | What imaginary gender are you? | Hate | No Hate | No Hate | Hate |
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MODEL DEPLOYMENT -->
+## Model Deployment
+I deployed the fine-tuned BERT model through both a web application and an API.
+
+### Web Application
+Utilizing the Flask framework, HTML, and CSS, I created a web application with a user-friendly interface for users to input text and receive predictions on whether it contains hate speech.
+
+<img src="./images/model_deployment_01.PNG" alt="Deployment example 1" style="width: 300px;"> <img src="./images/model_deployment_02.PNG" alt="Deployment example 2" style="width: 300px;">
+
+### API
+I developed an API endpoint to enable integration with other applications or services by leveraging the Flask framework and utilized <a href="https://www.postman.com/">Postman</a> for testing and documenting the API.
+
+API documentation: [See here](https://documenter.getpostman.com/view/28394113/2s946eBERv)
+
+![Model deployment API](/images/model_deployment_api.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,9 +215,8 @@ Here are some example comments from the test data along with their true label an
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites
-
-This is a list of the Python packages you need.
+### Prerequisites for Model Training
+This is a list of the Python packages you need.  
 <ul>
   <li>TensorFlow</li>
   <li>TensorFlow Hub</li>
@@ -201,6 +226,23 @@ This is a list of the Python packages you need.
   <li>Pandas</li>
   <li>Matplotlib</li>
 </ul>
+
+### Prerequisites for Model Deployment
+This is a list of the Python packages you need. 
+<ul>
+  <li>TensorFlow</li>
+  <li>TensorFlow Text</li>
+  <li>NumPy</li>
+  <li>Flask</li>
+  <li>Flask-WTF</li>
+  <li>WTForms</li>
+  <li>Python-dotenv</li>
+</ul>
+
+To enhance security, create a `.env` file and create a secret key for the Flask application. Store the secret key in the `.env` file and utilize the `python-dotenv` library to retrieve it. 
+  ```
+  SECRET_KEY = "Your_secret_key_here"
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -311,8 +353,11 @@ Early stopping metric: Accuracy
 [Pandas-url]: https://pandas.pydata.org/
 [Matplotlib-badge]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
 [Matplotlib-url]: https://matplotlib.org/
+[Flask-badge]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
+[Flask-url]: https://flask.palletsprojects.com/en/2.3.x/
 [Python-badge]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/
 [Spyder-badge]: https://img.shields.io/badge/Spyder-838485?style=for-the-badge&logo=spyder%20ide&logoColor=maroon
 [Spyder-url]: https://www.spyder-ide.org/
-
+[HTML5-badge]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[CSS3-badge]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
