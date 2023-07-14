@@ -52,7 +52,8 @@
   <li>
     <a href="#getting-started">Getting Started</a>
     <ul>
-      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#prerequisites-for-model-training">Prerequisites for Model Training</a></li>
+      <li><a href="#prerequisites-for-model-deployment">Prerequisites for Model Deployment</a></li>
     </ul>
   </li>
   <li>
