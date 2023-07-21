@@ -1,2 +1,2 @@
 saved_models/model3/variables/variables.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
-saved_models/ linguist-vendored
+saved_models/ linguist-ignore
