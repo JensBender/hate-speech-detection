@@ -1,8 +1,8 @@
 <!-- anchor tag for back-to-top links -->
 <a name="readme-top"></a>
 
-<!-- PROJECT LOGO -->
-<img src="images/logo.png">
+<!-- HEADER IMAGE  -->
+<img src="images/header_image.png">
 
 <!-- SHORT SUMMARY  -->
 Implemented a hate speech detector for social media comments using advanced deep learning techniques. The fine-tuned BERT model (78% accuracy) outperformed SimpleRNN and LSTM models and was deployed via a web application and an API.
