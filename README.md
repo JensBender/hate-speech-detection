@@ -2,16 +2,10 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
-<div align="center">
-  <a href="https://github.com/JensBender/hate-speech-detection">
-    <img src="images/logo.png" width=80%>
-  </a>
-  <p>
-    <br />
-    Implemented a hate speech detector for social media comments using advanced deep learning techniques. The fine-tuned BERT model (78% accuracy) outperformed SimpleRNN and LSTM models and was deployed via a web application and an API.
-    <br />
-  </p>
-</div> 
+<img src="images/logo.png">
+
+<!-- SHORT SUMMARY  -->
+Implemented a hate speech detector for social media comments using advanced deep learning techniques. The fine-tuned BERT model (78% accuracy) outperformed SimpleRNN and LSTM models and was deployed via a web application and an API.
 
 ---
 
