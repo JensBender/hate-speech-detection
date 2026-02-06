@@ -5,7 +5,7 @@
 <img src="images/header_image.png">
 
 <!-- SHORT SUMMARY  -->
-Implemented a hate speech detector for social media comments using advanced deep learning techniques. The fine-tuned BERT model (78% accuracy) outperformed SimpleRNN and LSTM models and was deployed via a web application and an API.
+Implemented a hate speech detector for social media comments using deep learning. The fine-tuned BERT model achieved 78% accuracy on the Ethos Hate Speech Dataset, outperforming SimpleRNN/LSTM baselines, and was deployed via a web application and API.
 
 ---
 
